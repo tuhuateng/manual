@@ -1,0 +1,31 @@
+site_name: MIIMOO STAND S1 Manuals  # 这是必需的配置项
+copyright: © 2024 MIIMOO | [プライバシーポリシー]
+copyright: Copyright &copy; 2024 株式会社MIIMOO https://miimoo.jp
+extra:
+  generator: false
+theme:
+  name: material
+  language: zh
+  logo: false
+  features:
+    - navigation.top      # 返回顶部按钮
+  palette:
+    scheme: default
+    primary: "#52b7bd"
+    accent: "#52B7BD"
+
+extra_css:
+  - stylesheets/extra.css
+
+    
+plugins:
+  - search
+  - with-pdf:
+      author: Your Name
+      copyright: Your Copyright
+      cover: true
+      cover_title: Your Document Title
+      cover_subtitle: Document Subtitle
+      toc_level: 3
+      output_path: pdf/document.pdf
+      enabled_if_env: ENABLE_PDF_EXPORT
