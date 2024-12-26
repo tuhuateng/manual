@@ -1,23 +1,23 @@
-site_name: MIIMOO STAND S1 Manuals  # 这是必需的配置项
+site_name: MIIMOO STAND S1 Manuals
 copyright: © 2024 MIIMOO | [プライバシーポリシー]
-copyright: Copyright &copy; 2024 株式会社MIIMOO https://miimoo.jp
-extra:
-  generator: false
+site_url: https://s1.miimoo.io
+generator: false
+use_directory_urls: false
+markdown_extensions:
+  - attr_list
+  - md_in_html
 theme:
   name: material
   language: zh
   logo: false
   features:
-    - navigation.top      # 返回顶部按钮
+    - navigation.top
   palette:
     scheme: default
     primary: "#52b7bd"
     accent: "#52B7BD"
-
 extra_css:
   - stylesheets/extra.css
-
-    
 plugins:
   - search
   - with-pdf:
